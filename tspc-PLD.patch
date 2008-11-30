@@ -1,0 +1,21 @@
+--- tspc2/platform/linux/tsp_local.c~	2008-11-30 16:16:10.308049558 +0100
++++ tspc2/platform/linux/tsp_local.c	2008-11-30 16:16:12.308047391 +0100
+@@ -59,13 +59,13 @@
+ 
+ /* these globals are defined by US used by alot of things in  */
+ 
+-char *FileName  = "tspc.conf";
+-char *LogFile   = "tspc.log";
++char *FileName  = "/etc/tsp/tspc.conf";
++char *LogFile   = "/var/log/tspc.log";
+ char *LogFileName = NULL;
+-char *ScriptInterpretor = "/bin/sh";
++char *ScriptInterpretor = NULL;
+ char *ScriptExtension = "sh";
+-char *ScriptDir = NULL;
+-char *TspHomeDir = "/usr/local/etc/tsp";
++char *ScriptDir = "/etc/tsp";
++char *TspHomeDir = "/etc/tsp";
+ char DirSeparator = '/';
+ 
+ int Verbose = 0;
