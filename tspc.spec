@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/t/tspc/%{name}_%{version}.orig.tar.gz
-# Source0-md5:	-
+# Source0-md5:	65183cae002feaacd8bc92d6a5404cc2
 Source1:	%{name}.init
 Patch0:		%{name}-PLD.patch
 BuildRequires:	rpmbuild(macros) >= 1.228
