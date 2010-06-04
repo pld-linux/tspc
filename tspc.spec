@@ -1,5 +1,4 @@
 Summary:	Client to configure an IPv6 tunnel to Hexago's migration broker
-#Summary(pl.UTF-8):	-
 Name:		tspc
 Version:	2.1.1
 Release:	0.1
@@ -14,18 +13,15 @@ Requires(post,preun):	/sbin/chkconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Connecting to the IPv6 Internet requires either a native connection
-or the cooperation of a friendly server to provide you with a tunnel.
+Connecting to the IPv6 Internet requires either a native connection or
+the cooperation of a friendly server to provide you with a tunnel.
 
 Tunnel Server Protocol Client (tspc), is a daemon to automate the
 setup and maintenance of an IPv6 tunnel. This client will connect to
 any migration broker which uses Hexago's implementation.
 
-# %description -l pl.UTF-8
-#TODO
-
 %prep
-%setup -q -n tspc2
+%setup -q -n %{name}2
 %patch0 -p1
 
 %build
